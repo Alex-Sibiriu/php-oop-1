@@ -25,9 +25,9 @@
       <?php foreach ($movies_array as $movie): ?>
         <div class="col text-center mb-2">
           <div class="card bg-secondary text-white py-2">
-            <h2><?php echo $movie->title ?></h2>
-            <h4>Direction: <?php echo $movie->direction ?></h4>
-            <p>Genres: <?php echo implode(', ', $movie->genres) ?></p>
+            <h2><?php echo $movie->getTitle() ?></h2>
+            <h4>Direction: <?php echo $movie->getDirection() ?></h4>
+            <p>Genres: <?php echo implode(', ', $movie->getGenres()) ?></p>
             <p>Year: <?php echo $movie->release_date ?></p>
           </div>
         </div>
